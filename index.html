@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading-main" style="margin-top: 14px;">EXPENSE TRACKER</h1>
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance">₹0.00</h1>
+        <div class="inc-exp-container">
+            <div>
+                <h4>INCOME</h4>
+                <p id="money-plus" class="money-plus" style="color:green">+ ₹0.00</p>
+            </div>
+            <div style="border-left: 1px solid #bbb; padding-left: 45px;">
+                <h4>EXPENSES</h4>
+                <p class="money-minus" id="money-minus" style="color:red">- ₹0.00</p>
+            </div>
+        </div>
+
+        <h3>History</h3>
+        <ul id="list" class="list">
+            <li class="minus">
+                Cash<span>-₹0.00</span> <button class="delete-btn">X</button>
+            </li>
+        </ul>
+
+        <h3>Add New Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label><br>
+                <input type="text" placeholder="Enter Text..." id="text">
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount <br>(negative - debited, positive - credited)</label><br>
+                <input type="number" placeholder="Enter amount..." id="amount">
+            </div>
+            <button id="btn">Add Transaction</button>
+            
+        </form>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
